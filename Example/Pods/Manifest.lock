@@ -1,0 +1,16 @@
+PODS:
+  - JImage (0.1.0)
+
+DEPENDENCIES:
+  - JImage (from `../`)
+
+EXTERNAL SOURCES:
+  JImage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JImage: e938c2866c9b3bd932fff15017b761f5edc1497b
+
+PODFILE CHECKSUM: 619b938be010516b41bad2bd2713b87e65776e1c
+
+COCOAPODS: 1.12.0

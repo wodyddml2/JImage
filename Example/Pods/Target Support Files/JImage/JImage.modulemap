@@ -1,0 +1,6 @@
+framework module JImage {
+  umbrella header "JImage-umbrella.h"
+
+  export *
+  module * { export * }
+}
