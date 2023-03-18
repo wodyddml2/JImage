@@ -7,16 +7,17 @@
 
 import Foundation
 
-class NetworkManager {
+final class NetworkManager {
     static let shared = NetworkManager()
     
     private init() { }
     
-    func request(urlString: String) -> UIImage? {
+    func setImage(with urlString: String, completion: @escaping (UIImage) -> Void) {
         if let cachedImage = ImageCacheManager.shared.loadImage(url: urlString) {
-            return cachedImage
+            completion(cachedImage)
+            return
         }
-        guard let url = URL(string: urlString) else { return nil }
+        guard let url = URL(string: urlString) else { return }
         let request = URLRequest(url: url)
         URLSession.shared.dataTask(with: request) { data, response, error in
             guard let response = response as? HTTPURLResponse, response.statusCode == 200,
@@ -26,8 +27,7 @@ class NetworkManager {
             
             ImageCacheManager.shared.setImage(url: urlString, image: image)
             
-        }
-        
-        return nil
+            completion(image)
+        }.resume()
     }
 }
