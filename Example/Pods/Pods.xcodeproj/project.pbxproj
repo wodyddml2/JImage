@@ -11,13 +11,13 @@
 		40F3B32081AF3FB9145D12145208FC68 /* Pods-JImage_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6DAF2599193261511CAED2867C6AFF6 /* Pods-JImage_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6353051D29B9DD8C008F753C /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6353051C29B9DD8C008F753C /* ImageCacheManager.swift */; };
 		6353052029B9E0A8008F753C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6353051F29B9E0A8008F753C /* NetworkManager.swift */; };
+		63C0FB5529CAF7A000E294F5 /* JImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0FB5429CAF7A000E294F5 /* JImage.swift */; };
 		808352FDCC3AC43A85C2FA3F8967DD5F /* JImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33C1BF3296BC05B1838DF3B2606094BD /* JImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		931322DE27E9E3FEE016512F18DEEA6E /* Pods-JImage_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD7E15B31A6014FD86D940295217B4B /* Pods-JImage_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A24169778FFF95B7C65897EC5EE35B4E /* Pods-JImage_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D77B8071B4AF4F9A8859634A9DBF48E /* Pods-JImage_Example-dummy.m */; };
 		C30349BD0B256226C6E0AB4C61CF1C8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		C3B2F1845543A2C83A9BFEA5A4AD262A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		C3FCF6FF0C2CF7CA1A25B2FE13686788 /* Pods-JImage_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5896AEAE259839A564D93B9055C053DF /* Pods-JImage_Tests-dummy.m */; };
-		E3481222DFF7AB1B34A85A4C5112FD31 /* JImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD837BE0615E0259D3B580636B94E30 /* JImage.swift */; };
 		EF9BBE00F5D9CCB9B6EB2A28549D9CF1 /* JImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C13BE49B928E21735D14FC708A5113E6 /* JImage-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +42,6 @@
 		1C21743B6CE83433B1C5DFEEA23C3ADD /* Pods-JImage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JImage_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1DCD069B997C74AB4818A36AC0BBCA80 /* Pods_JImage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JImage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D928483C56F5F97065A221088F6F0A /* Pods-JImage_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JImage_Example-Info.plist"; sourceTree = "<group>"; };
-		2CD837BE0615E0259D3B580636B94E30 /* JImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JImage.swift; path = JImage/Classes/JImage.swift; sourceTree = "<group>"; };
 		33C1BF3296BC05B1838DF3B2606094BD /* JImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JImage-umbrella.h"; sourceTree = "<group>"; };
 		3B74814CE4E2AFB9EB83328B11EC581D /* JImage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = JImage.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3D77B8071B4AF4F9A8859634A9DBF48E /* Pods-JImage_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JImage_Example-dummy.m"; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		61EAD093302A8D725AED6E61FC032267 /* JImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6353051C29B9DD8C008F753C /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
 		6353051F29B9E0A8008F753C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		63C0FB5429CAF7A000E294F5 /* JImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JImage.swift; path = Sources/JImage/Classes/JImage.swift; sourceTree = "<group>"; };
 		66A32FC78F3B9B83FF4A7DBD2421A75E /* Pods-JImage_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JImage_Example-frameworks.sh"; sourceTree = "<group>"; };
 		6BD7E15B31A6014FD86D940295217B4B /* Pods-JImage_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JImage_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6C88CF945EFE80646C51111833554EDE /* Pods-JImage_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JImage_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -219,7 +219,7 @@
 		E7813C7C731179A432AA71E2F942529A /* JImage */ = {
 			isa = PBXGroup;
 			children = (
-				2CD837BE0615E0259D3B580636B94E30 /* JImage.swift */,
+				63C0FB5429CAF7A000E294F5 /* JImage.swift */,
 				6353051C29B9DD8C008F753C /* ImageCacheManager.swift */,
 				6353051F29B9E0A8008F753C /* NetworkManager.swift */,
 				4653DA2D626C13A1598452ACD18E4D4F /* Pod */,
@@ -395,8 +395,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6353052029B9E0A8008F753C /* NetworkManager.swift in Sources */,
+				63C0FB5529CAF7A000E294F5 /* JImage.swift in Sources */,
 				EF9BBE00F5D9CCB9B6EB2A28549D9CF1 /* JImage-dummy.m in Sources */,
-				E3481222DFF7AB1B34A85A4C5112FD31 /* JImage.swift in Sources */,
 				6353051D29B9DD8C008F753C /* ImageCacheManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
