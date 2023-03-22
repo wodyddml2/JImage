@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		33828F2029A114D54605BAE058890519 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		40F3B32081AF3FB9145D12145208FC68 /* Pods-JImage_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6DAF2599193261511CAED2867C6AFF6 /* Pods-JImage_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6353051D29B9DD8C008F753C /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6353051C29B9DD8C008F753C /* ImageCacheManager.swift */; };
-		6353052029B9E0A8008F753C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6353051F29B9E0A8008F753C /* NetworkManager.swift */; };
 		63C0FB5529CAF7A000E294F5 /* JImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0FB5429CAF7A000E294F5 /* JImage.swift */; };
+		63C0FB5D29CAFC8100E294F5 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0FB5C29CAFC8100E294F5 /* ImageCacheManager.swift */; };
+		63C0FB5F29CAFC8500E294F5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0FB5E29CAFC8500E294F5 /* NetworkManager.swift */; };
 		808352FDCC3AC43A85C2FA3F8967DD5F /* JImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33C1BF3296BC05B1838DF3B2606094BD /* JImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		931322DE27E9E3FEE016512F18DEEA6E /* Pods-JImage_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD7E15B31A6014FD86D940295217B4B /* Pods-JImage_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A24169778FFF95B7C65897EC5EE35B4E /* Pods-JImage_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D77B8071B4AF4F9A8859634A9DBF48E /* Pods-JImage_Example-dummy.m */; };
@@ -50,9 +50,9 @@
 		5896AEAE259839A564D93B9055C053DF /* Pods-JImage_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JImage_Tests-dummy.m"; sourceTree = "<group>"; };
 		5918885454DE985614C3EC12AFAA7D16 /* Pods-JImage_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JImage_Example.modulemap"; sourceTree = "<group>"; };
 		61EAD093302A8D725AED6E61FC032267 /* JImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6353051C29B9DD8C008F753C /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
-		6353051F29B9E0A8008F753C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		63C0FB5429CAF7A000E294F5 /* JImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JImage.swift; path = Sources/JImage/Classes/JImage.swift; sourceTree = "<group>"; };
+		63C0FB5C29CAFC8100E294F5 /* ImageCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCacheManager.swift; path = Sources/JImage/Classes/ImageCacheManager.swift; sourceTree = "<group>"; };
+		63C0FB5E29CAFC8500E294F5 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Sources/JImage/Classes/NetworkManager.swift; sourceTree = "<group>"; };
 		66A32FC78F3B9B83FF4A7DBD2421A75E /* Pods-JImage_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JImage_Example-frameworks.sh"; sourceTree = "<group>"; };
 		6BD7E15B31A6014FD86D940295217B4B /* Pods-JImage_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JImage_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6C88CF945EFE80646C51111833554EDE /* Pods-JImage_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JImage_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -220,8 +220,8 @@
 			isa = PBXGroup;
 			children = (
 				63C0FB5429CAF7A000E294F5 /* JImage.swift */,
-				6353051C29B9DD8C008F753C /* ImageCacheManager.swift */,
-				6353051F29B9E0A8008F753C /* NetworkManager.swift */,
+				63C0FB5E29CAFC8500E294F5 /* NetworkManager.swift */,
+				63C0FB5C29CAFC8100E294F5 /* ImageCacheManager.swift */,
 				4653DA2D626C13A1598452ACD18E4D4F /* Pod */,
 				4AC194A0C447A2435733D84140D34271 /* Support Files */,
 			);
@@ -394,10 +394,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6353052029B9E0A8008F753C /* NetworkManager.swift in Sources */,
+				63C0FB5F29CAFC8500E294F5 /* NetworkManager.swift in Sources */,
 				63C0FB5529CAF7A000E294F5 /* JImage.swift in Sources */,
 				EF9BBE00F5D9CCB9B6EB2A28549D9CF1 /* JImage-dummy.m in Sources */,
-				6353051D29B9DD8C008F753C /* ImageCacheManager.swift in Sources */,
+				63C0FB5D29CAFC8100E294F5 /* ImageCacheManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
