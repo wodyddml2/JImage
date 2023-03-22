@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 public struct JImage {
     public static func example(with url: String, completion: @escaping (UIImage) -> Void) {

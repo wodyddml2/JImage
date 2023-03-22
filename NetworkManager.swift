@@ -7,12 +7,12 @@
 
 import Foundation
 
-final class NetworkManager {
-    static let shared = NetworkManager()
+open class NetworkManager {
+    public static let shared = NetworkManager()
     
-    private init() { }
+    public init() { }
     
-    func setImage(with urlString: String, completion: @escaping (UIImage) -> Void) {
+    public func setImage(with urlString: String, completion: @escaping (UIImage) -> Void) {
         if let cachedImage = ImageCacheManager.shared.loadImage(url: urlString) {
             completion(cachedImage)
             return
