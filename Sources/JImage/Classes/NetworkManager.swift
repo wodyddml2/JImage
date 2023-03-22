@@ -5,7 +5,7 @@
 //  Created by J on 2023/03/09.
 //
 
-import Foundation
+import UIKit
 
 open class NetworkManager {
     public static let shared = NetworkManager()
