@@ -7,7 +7,7 @@
 
 ## Example
 ```
-let url: String = "https://apod.nasa.gov/apod/image/2201/OrionStarFree3_Harbison_5000.jpg"
+let url: String = ""
 
 JImage.example(with: url, completion: { image in
    DispatchQueue.main.async {
