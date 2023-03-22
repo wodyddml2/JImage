@@ -6,12 +6,24 @@
 [![Platform](https://img.shields.io/cocoapods/p/JImage.svg?style=flat)](https://cocoapods.org/pods/JImage)
 
 ## Example
+```
+let url: String = "https://apod.nasa.gov/apod/image/2201/OrionStarFree3_Harbison_5000.jpg"
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
+JImage.example(with: url, completion: { image in
+   DispatchQueue.main.async {
+       self.imageView.image = image
+   }
+})
+```
 ## Requirements
+- iOS 15.0
 
 ## Installation
+### Swift Package Manager
+```
+https://github.com/wodyddml2/JImage
+```
+<br/>
 
 JImage is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -22,7 +34,8 @@ pod 'JImage'
 
 ## Author
 
-wodyddml2, wodyddml4@naver.com
+- wodyddml2
+- Email: wodyddml4@naver.com
 
 ## License
 
